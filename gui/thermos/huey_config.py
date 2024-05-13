@@ -1,0 +1,14 @@
+
+
+config_huey = dict(
+    HUEY_STORAGE_READ_TIMEOUT=1,
+
+    HUEY_STORAGE_URL='redis://localhost:6379',
+
+    HUEY_TASK_QUEUE_NAME='SINGULARITY',
+    HUEY_RESULTS=True,
+    HUEY_STORE_NONE=False,
+    HUEY_IMMEDIATE=False,
+    HUEY_STORE_ERRORS=True,
+    HUEY_BLOCKING=True
+)

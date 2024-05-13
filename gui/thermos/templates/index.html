@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+Welcome to Infinity - The interactive Environment Dashboard
+{%  endblock %}
+
+
+{% block content %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <article>
+        <header>
+            <h1>Welcome</h1>
+            <p>The Infinity dashboard is the user interface created for project infinity, a project by Utibe Umoh to explore models focussed on machine learning and systematic strategies.</p>
+            <p>The algorithm is implemented in Python using Flask with a simplified version of the analytics dashboard on <a href="https://github.com/utibe-47/singularity">Github</a>.</p>
+            <p>Don't have an account? Create one by <a href="{{ url_for('auth.signup') }}">Signing up</a></p>
+        </header>
+    </article>
+
+{% endblock %}
